@@ -198,6 +198,19 @@ vim.keymap.set('n', '<C-right>', '<C-w><C-l>', { desc = 'Move focus to the right
 vim.keymap.set('n', '<C-down>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-up>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Custom keybinds for moving around
+-- mostly used to remap american binds to swedish layout
+vim.keymap.set('n', 'ö', '{', { desc = 'Jump paragraph up' })
+vim.keymap.set('n', 'ä', '}', { desc = 'Jump paragraph down' })
+vim.keymap.set('n', 'Ö', '[', { desc = 'Jump paragraph up' })
+vim.keymap.set('n', 'Ä', ']', { desc = 'Jump paragraph down' })
+
+-- Custom changes for input e.g. swedish characters to brackets
+vim.keymap.set('i', 'ö', '{')
+vim.keymap.set('i', 'ä', '}')
+vim.keymap.set('i', 'Ö', '[')
+vim.keymap.set('i', 'Ä', ']')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
