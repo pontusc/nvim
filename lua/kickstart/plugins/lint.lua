@@ -7,7 +7,11 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
+        python = { 'pylint' },
       }
+      -- Set pylint to work in virtualenv
+      require('lint').linters.pylint.cmd = 'python'
+      require('lint').linters.pylint.args = { '-m', 'pylint', '-f', 'json' }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
       -- instead set linters_by_ft like this:
