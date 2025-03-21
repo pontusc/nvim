@@ -210,6 +210,16 @@ vim.keymap.set('i', 'ö', '{')
 vim.keymap.set('i', 'ä', '}')
 vim.keymap.set('i', 'Ö', '[')
 vim.keymap.set('i', 'Ä', ']')
+vim.keymap.set('i', 'å', '/')
+vim.keymap.set('i', 'Å', '\\')
+
+
+vim.keymap.set('c', 'ö', '{')
+vim.keymap.set('c', 'ä', '}')
+vim.keymap.set('c', 'Ö', '[')
+vim.keymap.set('c', 'Ä', ']')
+vim.keymap.set('c', 'å', '/')
+vim.keymap.set('c', 'Å', '\\')
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
