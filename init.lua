@@ -206,19 +206,12 @@ vim.keymap.set('n', 'Ö', '[', { desc = 'Jump paragraph up' })
 vim.keymap.set('n', 'Ä', ']', { desc = 'Jump paragraph down' })
 
 -- Custom changes for input e.g. swedish characters to brackets
-vim.keymap.set('i', 'ö', '{')
-vim.keymap.set('i', 'ä', '}')
-vim.keymap.set('i', 'Ö', '[')
-vim.keymap.set('i', 'Ä', ']')
-vim.keymap.set('i', 'å', '/')
-vim.keymap.set('i', 'Å', '\\')
-
-vim.keymap.set('c', 'ö', '{')
-vim.keymap.set('c', 'ä', '}')
-vim.keymap.set('c', 'Ö', '[')
-vim.keymap.set('c', 'Ä', ']')
-vim.keymap.set('c', 'å', '/')
-vim.keymap.set('c', 'Å', '\\')
+vim.keymap.set({ 'i', 'c' }, 'ö', '{', { remap = true })
+vim.keymap.set({ 'i', 'c' }, 'ä', '}', { remap = true })
+vim.keymap.set({ 'i', 'c' }, 'Ö', '[', { remap = true })
+vim.keymap.set({ 'i', 'c' }, 'Ä', ']', { remap = true })
+vim.keymap.set({ 'i', 'c' }, 'å', '/', { remap = true })
+vim.keymap.set({ 'i', 'c' }, 'Å', '\\', { remap = true })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
