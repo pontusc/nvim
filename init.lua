@@ -200,18 +200,19 @@ vim.keymap.set('n', '<C-up>', '<C-w><C-k>', { desc = 'Move focus to the upper wi
 
 -- Custom keybinds for moving around
 -- mostly used to remap american binds to swedish layout
-vim.keymap.set('n', 'ö', '{', { desc = 'Jump paragraph up' })
-vim.keymap.set('n', 'ä', '}', { desc = 'Jump paragraph down' })
-vim.keymap.set('n', 'Ö', '[', { desc = 'Jump paragraph up' })
-vim.keymap.set('n', 'Ä', ']', { desc = 'Jump paragraph down' })
+--vim.keymap.set('n', 'ö', '{', { desc = 'Jump paragraph up' })
+--vim.keymap.set('n', 'ä', '}', { desc = 'Jump paragraph down' })
+--vim.keymap.set('n', 'Ö', '[', { desc = 'Jump paragraph up' })
+--vim.keymap.set('n', 'Ä', ']', { desc = 'Jump paragraph down' })
 
 -- Custom changes for input e.g. swedish characters to brackets
-vim.keymap.set({ 'i', 'c' }, 'ö', '{', { remap = true })
-vim.keymap.set({ 'i', 'c' }, 'ä', '}', { remap = true })
-vim.keymap.set({ 'i', 'c' }, 'Ö', '[', { remap = true })
-vim.keymap.set({ 'i', 'c' }, 'Ä', ']', { remap = true })
-vim.keymap.set({ 'i', 'c' }, 'å', '/', { remap = true })
-vim.keymap.set({ 'i', 'c' }, 'Å', '\\', { remap = true })
+local remap_modes = { 'n', 'v', 'x', 's', 'i', 'o', 'c', 't' }
+vim.keymap.set(remap_modes, 'ö', '{', { remap = true })
+vim.keymap.set(remap_modes, 'ä', '}', { remap = true })
+vim.keymap.set(remap_modes, 'Ö', '[', { remap = true })
+vim.keymap.set(remap_modes, 'Ä', ']', { remap = true })
+vim.keymap.set(remap_modes, 'å', '/', { remap = true })
+vim.keymap.set(remap_modes, 'Å', '\\', { remap = true })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
