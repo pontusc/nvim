@@ -242,6 +242,8 @@ return {
       'stylua', -- Used to format Lua code
       'beautysh', -- Format bash code
       'black', -- format python code
+
+      'shellcheck',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

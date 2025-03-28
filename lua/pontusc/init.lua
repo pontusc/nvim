@@ -6,7 +6,10 @@ vim.g.have_nerd_font = true
 -- Make line numbers default
 vim.opt.number = true
 
+--Enable mouse
 vim.opt.mouse = 'a'
+
+-- Hide mode, statusbar shows
 vim.opt.showmode = false
 
 -- Enable break indent
@@ -23,7 +26,7 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
-vim.opt.updatetime = 250
+vim.opt.updatetime = 50
 
 -- Decrease mapped sequence wait time
 vim.opt.timeoutlen = 300
