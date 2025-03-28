@@ -6,7 +6,8 @@ return {
     local lint = require 'lint'
     lint.linters_by_ft = {
       markdown = { 'markdownlint' },
-      python = { 'pylint' },
+      python = { 'ruff' },
+      sh = { 'shellcheck' },
     }
     -- Set pylint to work in virtualenv
     require('lint').linters.pylint.cmd = 'python'
