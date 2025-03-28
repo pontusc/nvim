@@ -208,6 +208,7 @@ return {
     local servers = {
       pyright = {},
       bashls = {},
+      yamlls = {},
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
@@ -243,6 +244,7 @@ return {
       'stylua', -- Used to format Lua code
       'beautysh', -- Format bash code
       'black', -- format python code
+      'prettier', -- format yaml
 
       -- Linters
       'ruff', -- python
