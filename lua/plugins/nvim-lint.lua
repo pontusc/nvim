@@ -9,10 +9,20 @@ return {
       python = { 'ruff' },
       sh = { 'shellcheck' },
     }
-    -- Set pylint to work in virtualenv
-    require('lint').linters.pylint.cmd = 'python'
-    require('lint').linters.pylint.args = { '-m', 'pylint', '-f', 'json' }
 
+    -- Simple function to get pip venv python path
+    local function get_venv_python()
+      local venv_path = os.getenv 'VIRTUAL_ENV'
+      return venv_path and venv_path .. '/bin/python' or 'python'
+    end
+
+    lint.linters.pylint.cmd = get_venv_python()
+    lint.linters.pylint.args = {
+      '-f',
+      'text',
+      '--disable=C0111',
+      '--enable=E,W',
+    }
     -- To allow other plugins to add linters to require('lint').linters_by_ft,
     -- instead set linters_by_ft like this:
     -- lint.linters_by_ft = lint.linters_by_ft or {}
