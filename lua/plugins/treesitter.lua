@@ -7,6 +7,7 @@ return {
   opts = {
     ensure_installed = {
       'bash',
+      'dockerfile',
       'diff',
       'lua',
       'luadoc',
@@ -31,6 +32,11 @@ return {
         node_incremental = '<C-n>',
         scope_incremental = '<C-s>',
         node_decremental = '<C-m>',
+      },
+    },
+    vim.filetype.add {
+      pattern = {
+        ['.*[Dd]ockerfile.*'] = 'dockerfile',
       },
     },
   },
