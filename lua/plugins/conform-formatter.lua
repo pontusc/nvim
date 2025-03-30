@@ -36,6 +36,7 @@ return {
       python = { 'black' },
       sh = { 'beautysh' },
       yaml = { 'prettier' },
+      javascript = { 'prettier' },
     },
   },
 }

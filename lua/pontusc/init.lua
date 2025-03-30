@@ -7,7 +7,7 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 
 --Enable mouse
-vim.opt.mouse = 'a'
+vim.opt.mouse = ''
 
 -- Hide mode, statusbar shows
 vim.opt.showmode = false
