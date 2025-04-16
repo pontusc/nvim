@@ -35,6 +35,7 @@ return {
       lua = { 'stylua' },
       python = { 'black' },
       sh = { 'beautysh' },
+      json = { 'prettier' },
       yaml = { 'prettier' },
       javascript = { 'prettier' },
     },

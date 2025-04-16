@@ -9,6 +9,7 @@ return {
       'bash',
       'dockerfile',
       'diff',
+      'yaml',
       'lua',
       'luadoc',
       'markdown',
