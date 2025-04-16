@@ -6,7 +6,7 @@ vim.g.have_nerd_font = true
 -- Make line numbers default
 vim.opt.number = true
 
---Enable mouse
+-- Disable mouse
 vim.opt.mouse = ''
 
 -- Hide mode, statusbar shows
@@ -34,6 +34,14 @@ vim.opt.timeoutlen = 300
 -- Configure how new splits should be opened
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+-- Set tabs to space
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.autoindent = true
+vim.opt.expandtab = true
+vim.opt.smartindent = true
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
