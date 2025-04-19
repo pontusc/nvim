@@ -8,6 +8,7 @@ return {
       markdown = { 'markdownlint' },
       python = { 'ruff' },
       sh = { 'shellcheck' },
+      typescript = { 'eslint_d' },
     }
 
     -- Simple function to get pip venv python path

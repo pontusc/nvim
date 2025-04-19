@@ -38,6 +38,7 @@ return {
       json = { 'prettier' },
       yaml = { 'prettier' },
       javascript = { 'prettier' },
+      typescript = { 'prettier' },
     },
   },
 }

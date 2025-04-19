@@ -81,6 +81,9 @@ return {
         --  Useful when your language has ways of declaring types without an actual implementation.
         map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
 
+        -- Show the definition of current word, type etc.
+        map('<leader>i', vim.lsp.buf.hover, '[I]nspect variable', { 'n' })
+
         -- Jump to the type of the word under your cursor.
         --  Useful when you're not sure what type a variable is and you want to see
         --  the definition of its *type*, not where it was *defined*.
@@ -208,6 +211,7 @@ return {
     local servers = {
       pyright = {},
       bashls = {},
+      ts_ls = {},
       yamlls = {
         settings = {
           yaml = {
@@ -270,6 +274,7 @@ return {
       'ruff', -- python
       'shellcheck', -- linter for bash
       'markdownlint', -- Markdown
+      'eslint_d', -- Typescript, JS
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
