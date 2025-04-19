@@ -211,6 +211,7 @@ return {
     local servers = {
       pyright = {},
       bashls = {},
+      jsonls = {},
       ts_ls = {},
       yamlls = {
         settings = {
@@ -275,6 +276,7 @@ return {
       'shellcheck', -- linter for bash
       'markdownlint', -- Markdown
       'eslint_d', -- Typescript, JS
+      'jsonlint',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

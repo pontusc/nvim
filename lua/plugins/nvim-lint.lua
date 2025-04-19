@@ -9,6 +9,7 @@ return {
       python = { 'ruff' },
       sh = { 'shellcheck' },
       typescript = { 'eslint_d' },
+      json = { 'jsonlint' },
     }
 
     -- Simple function to get pip venv python path
