@@ -213,6 +213,7 @@ return {
       bashls = {},
       jsonls = {},
       ts_ls = {},
+      taplo = {},
       yamlls = {
         settings = {
           yaml = {
