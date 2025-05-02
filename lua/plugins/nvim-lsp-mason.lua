@@ -283,7 +283,6 @@ return {
       -- Formatters
       'stylua', -- Used to format Lua code
       'beautysh', -- Format bash code
-      'black', -- format python code
       'prettier', -- format yaml
 
       -- Linters
