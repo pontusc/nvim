@@ -288,7 +288,6 @@ return {
       -- Linters
       'ruff', -- python
       'shellcheck', -- linter for bash
-      'markdownlint', -- Markdown
       'eslint_d', -- Typescript, JS
       'jsonlint',
     })
