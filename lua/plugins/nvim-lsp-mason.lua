@@ -235,17 +235,9 @@ return {
           yaml = {
             schemaStore = {
               enable = false,
+              url = '',
             },
-            schemas = {
-              ['http://json.schemastore.org/github-workflow'] = '.github/workflows/*',
-              ['http://json.schemastore.org/github-action'] = '.github/action.{yml,yaml}',
-              ['https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json'] = '*gitlab-ci*.{yml,yaml}',
-              ['https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json'] = {
-                '*docker-compose*.yml',
-                '*docker-compose-*.yml',
-              },
-              Kubernetes = '*.{yml,yaml}',
-            },
+            schemas = require('schemastore').yaml.schemas(),
           },
         },
       },
