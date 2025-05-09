@@ -228,6 +228,8 @@ return {
       jsonls = {},
       ts_ls = {},
       taplo = {},
+
+      -- yml/yaml language server
       yamlls = {
         settings = {
           yaml = {
@@ -249,6 +251,8 @@ return {
           },
         },
       },
+
+      -- Lua language server
       lua_ls = {
         -- cmd = { ... },
         -- filetypes = { ... },
