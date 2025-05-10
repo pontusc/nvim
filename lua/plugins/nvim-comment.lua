@@ -1,9 +1,7 @@
--- Plugin that manages vim.opt.scrolloff to also work below end of file
-
 return {
-  'terrortylor/nvim-comment',
+  "terrortylor/nvim-comment",
   config = function()
-    require('nvim_comment').setup {
+    require("nvim_comment").setup({
       -- Linters prefer comment and line to have a space in between markers
       marker_padding = true,
       -- should comment out empty or whitespace only lines
@@ -13,17 +11,16 @@ return {
       -- Should key mappings be created
       create_mappings = false,
       -- Normal mode mapping left hand side
-      line_mapping = 'gcc',
+      line_mapping = "gcc",
       -- Visual/Operator mapping left hand side
-      operator_mapping = 'gc',
+      operator_mapping = "gc",
       -- text object mapping, comment chunk,,
-      comment_chunk_text_object = 'ic',
+      comment_chunk_text_object = "ic",
       -- Hook function to call before commenting takes place
       hook = nil,
-    }
+    })
 
-    -- Manual bindings
-    vim.keymap.set('n', 'gcc', ':CommentToggle<CR>', { desc = 'Toggle comment on current line' })
-    vim.keymap.set('v', 'gc', ':CommentToggle<CR>', { desc = 'Toggle comment on selection' })
+    vim.keymap.set("n", "gcc", ":CommentToggle<CR>", { desc = "Toggle comment on current line" })
+    vim.keymap.set("v", "gc", ":CommentToggle<CR>", { desc = "Toggle comment on selection" })
   end,
 }
