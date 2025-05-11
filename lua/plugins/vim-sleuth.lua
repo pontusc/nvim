@@ -1,4 +1,4 @@
 -- Plugin handles shiftwidth and expandtab
 return {
-  'tpope/vim-sleuth',
+  "tpope/vim-sleuth",
 }
