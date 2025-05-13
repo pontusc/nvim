@@ -9,6 +9,7 @@ return {
       sh = { "shellcheck" },
       typescript = { "eslint_d" },
       json = { "jsonlint" },
+      yaml = { "yamllint" },
     }
 
     -- Simple function to get pip venv python path

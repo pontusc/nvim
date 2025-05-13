@@ -198,8 +198,10 @@ return {
               enable = true,
               url = "https://www.schemastore.org/api/json/catalog.json",
             },
+            completion = true,
             validate = false,
             format = { enabled = false },
+            hover = true,
             schemas = {
               kubernetes = {
                 "*.{yml,yaml}",
@@ -253,7 +255,8 @@ return {
       "ruff", -- python
       "shellcheck", -- linter for bash
       "eslint_d", -- Typescript, JS
-      "jsonlint",
+      "jsonlint", -- JS
+      "yamllint", -- yml
     })
 
     -- LSP servers and clients are able to communicate to each other what features they support.
