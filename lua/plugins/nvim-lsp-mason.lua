@@ -201,6 +201,7 @@ return {
             completion = true,
             validate = false,
             format = { enabled = false },
+            editor = { tabSize = 2 },
             hover = true,
             schemas = {
               kubernetes = {
@@ -249,7 +250,8 @@ return {
       -- Formatters
       "stylua", -- Used to format Lua code
       "beautysh", -- Format bash code
-      "prettier", -- format yaml
+      "prettier", -- general formatter
+      "yamlfmt", -- yml
 
       -- Linters
       "ruff", -- python

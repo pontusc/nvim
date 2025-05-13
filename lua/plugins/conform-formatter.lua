@@ -36,7 +36,7 @@ return {
       python = { "ruff" },
       sh = { "beautysh" },
       json = { "prettier" },
-      yaml = { "prettier" },
+      yaml = { "yamlfmt" },
       javascript = { "prettier" },
       typescript = { "prettier" },
     },
