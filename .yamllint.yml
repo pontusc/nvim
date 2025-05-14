@@ -18,6 +18,11 @@ rules:
 
   key-duplicates: enable
 
+  indentation:
+    spaces: 2
+    indent-sequences: whatever
+    check-multi-line-strings: true
+
   empty-lines:
     max: 1
     max-end: 1
