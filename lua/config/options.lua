@@ -22,6 +22,7 @@ o.splitbelow = true
 
 -- Set tabs to space
 o.tabstop = 2
+vim.g.markdown_recommended_style = 0 -- Specific markdown fix for 2 spaces per tab
 o.softtabstop = 2
 o.shiftwidth = 2
 o.autoindent = true

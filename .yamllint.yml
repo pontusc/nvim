@@ -21,7 +21,7 @@ rules:
   indentation:
     spaces: 2
     indent-sequences: whatever
-    check-multi-line-strings: true
+    check-multi-line-strings: false
 
   empty-lines:
     max: 1

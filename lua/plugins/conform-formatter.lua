@@ -31,12 +31,14 @@ return {
         lsp_format = lsp_format_opt,
       }
     end,
+    -- Specify which formatter to use per filetype
     formatters_by_ft = {
       lua = { "stylua" },
       python = { "ruff" },
       sh = { "beautysh" },
       json = { "prettier" },
       yaml = { "yamlfmt" },
+      markdown = { "prettier" },
       javascript = { "prettier" },
       typescript = { "prettier" },
     },
