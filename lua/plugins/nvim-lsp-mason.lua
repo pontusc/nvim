@@ -193,6 +193,9 @@ return {
       -- yml/yaml language server
       yamlls = {},
 
+      -- terraform
+      terraformls = {},
+
       -- Lua language server
       lua_ls = {
         -- cmd = { ... },
@@ -220,6 +223,7 @@ return {
       "beautysh", -- Format bash code
       "prettier", -- general formatter
       "yamlfmt", -- yml
+      "terraform", -- tf
 
       -- Linters
       "ruff", -- python
