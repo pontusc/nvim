@@ -41,6 +41,7 @@ return {
       markdown = { "prettier" },
       javascript = { "prettier" },
       typescript = { "prettier" },
+      terraform = { "terraform-ls" },
     },
   },
 }
