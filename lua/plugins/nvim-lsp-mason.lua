@@ -193,6 +193,9 @@ return {
       -- yml/yaml language server
       yamlls = {},
 
+      -- Ansible server
+      ansiblels = {},
+
       -- terraform
       terraformls = {},
 
