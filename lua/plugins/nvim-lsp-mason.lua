@@ -263,7 +263,7 @@ return {
                 paths = {
                   "~/.ansible/collections",
                   "/usr/share/ansible/collections",
-                  -- Add your custom collection paths here
+                  "~/.local/share/pipx/venvs/ansible/lib/python3.12/site-packages",
                 },
               },
             },
