@@ -37,6 +37,9 @@ return {
         node_decremental = "<C-m>",
       },
     },
+
+    vim.treesitter.language.register("yaml", "yml.ansible"),
+
     vim.filetype.add({
       pattern = {
         [".*[Dd]ockerfile.*"] = "dockerfile",
