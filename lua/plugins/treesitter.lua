@@ -38,7 +38,7 @@ return {
       },
     },
 
-    vim.treesitter.language.register("yaml", "yml.ansible"),
+    vim.treesitter.language.register("yaml", "ansible"),
 
     vim.filetype.add({
       pattern = {

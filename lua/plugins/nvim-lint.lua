@@ -10,6 +10,7 @@ return {
       typescript = { "eslint_d" },
       json = { "jsonlint" },
       yaml = { "yamllint" },
+      ansible = { "ansible_lint" },
     }
 
     -- Simple function to get pip venv python path

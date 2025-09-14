@@ -223,13 +223,13 @@ return {
       -- Ansible server
       ansiblels = {
         filetypes = {
-          "yml.ansible",
           "ansible",
         },
         settings = {
           ansible = {
             ansible = {
               path = "ansible",
+              useFullyQualifiedCollectionNames = true,
             },
             executionEnvironment = {
               enabled = false,
@@ -242,6 +242,29 @@ return {
               lint = {
                 enabled = false,
                 path = "ansible-lint",
+              },
+            },
+            completion = {
+              provideRedirectModules = true,
+              provideModuleOptionAliases = true,
+            },
+          },
+        },
+        init_options = {
+          settings = {
+            ansible = {
+              ansible = {
+                path = "ansible",
+              },
+              ansibleLint = {
+                path = "ansible-lint",
+              },
+              collections = {
+                paths = {
+                  "~/.ansible/collections",
+                  "/usr/share/ansible/collections",
+                  -- Add your custom collection paths here
+                },
               },
             },
           },

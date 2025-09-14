@@ -1,11 +1,11 @@
 vim.filetype.add({
   pattern = {
     -- Ansible playbooks
-    [".*playbook.*%.ya?ml"] = "yml.ansible",
-    [".*play.*%.ya?ml"] = "yml.ansible",
+    [".*playbook.*%.ya?ml"] = "ansible",
+    [".*play.*%.ya?ml"] = "ansible",
 
     -- Common Ansible file patterns
-    [".*ansible.*%.ya?ml"] = "yml.ansible",
+    [".*ansible.*%.ya?ml"] = "ansible",
 
     -- Dockerfile detection
     [".*[Dd]ockerfile.*"] = "dockerfile",
