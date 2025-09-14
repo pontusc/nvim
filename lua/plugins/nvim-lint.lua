@@ -32,6 +32,12 @@ return {
       "-e SC1090",
     }
 
+    lint.linters.ansible_lint.args = {
+      "--skip-list",
+      "no-inventory",
+      "-",
+    }
+
     -- Create autocommand which carries out the actual linting
     -- on the specified events.
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
