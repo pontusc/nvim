@@ -218,6 +218,18 @@ return {
           ["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "*docker-compose*.{yml,yaml}",
           ["https://raw.githubusercontent.com/argoproj/argo-workflows/master/api/jsonschema/schema.json"] = "*flow*.{yml,yaml}",
         },
+        settings = {
+          yaml = {
+            -- Enable custom tags for GitLab CI
+            customTags = {
+              "!reference sequence", -- for !reference tags
+            },
+            -- Disable schema validation for specific patterns if needed
+            disableAdditionalProperties = false,
+            -- Enable completion for custom tags
+            completion = true,
+          },
+        },
       },
 
       -- Ansible server
