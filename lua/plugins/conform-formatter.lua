@@ -34,7 +34,7 @@ return {
     -- Specify which formatter to use per filetype
     formatters_by_ft = {
       lua = { "stylua" },
-      python = { "ruff" },
+      python = { "black" },
       sh = { "beautysh" },
       json = { "prettier" },
       yaml = { "yamlfmt" },

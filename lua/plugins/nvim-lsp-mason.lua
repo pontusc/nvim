@@ -170,21 +170,18 @@ return {
     --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
     --  - settings (table): Override the default settings passed when initializing the server.
     local servers = {
-      ruff = {},
-      pyright = {
-        --   settings = {
-        --     pyright = {
-        --       -- Using Ruff's import organizer
-        --       disableOrganizeImports = true,
-        --     },
-        --     python = {
-        --       analysis = {
-        --         -- Ignore all files for analysis to exclusively use Ruff for linting
-        --         ignore = { '*' },
-        --       },
-        --     },
-        --   },
+      basedpyright = {
+        settings = {
+          basedpyright = {
+            disableOrganizedImports = false,
+            analysis = {
+              typeCheckingMode = "off",
+              ignore = { "*" },
+            },
+          },
+        },
       },
+
       bashls = {},
       jsonls = {},
       ts_ls = {},
@@ -230,8 +227,6 @@ return {
             },
             -- Disable schema validation for specific patterns if needed
             disableAdditionalProperties = false,
-            -- Enable completion for custom tags
-            completion = true,
           },
         },
       },
@@ -317,6 +312,7 @@ return {
       "beautysh", -- Format bash code
       "prettier", -- general formatter
       "yamlfmt", -- yml
+      "black",
       "terraform", -- tf
 
       -- Linters
