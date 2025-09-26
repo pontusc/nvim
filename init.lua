@@ -1,4 +1,2 @@
--- Init
-vim.g.mapleader = " "
-vim.g.localmapleader = " "
-require("config")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
