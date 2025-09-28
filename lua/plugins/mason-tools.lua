@@ -7,6 +7,7 @@ return {
       "prettier",
       "yamlfmt",
       "black",
+      "terraform",
 
       -- Linters
       "ruff", -- python
