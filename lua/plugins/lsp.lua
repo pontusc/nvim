@@ -80,18 +80,29 @@ return
               lintOverlayValuesFile = "values.lint.yaml",
               additionalValuesFilesGlobPattern = "values*.{yaml,yml}",
             },
+            helmLint = {
+              ignoredMessages = {
+                "icon is recommended",
+              },
+            },
             yamlls = {
-              path = vim.fn.stdpath("data") .. "/mason/bin/yaml-language-server",
+              enabled = true,
+              enabledForFilesGlob = "*.{yaml,yml}",
+              diagnosticsLimit = 0,
               showDiagnosticsDirectly = false,
-              -- config = {
-              --   validate = false,
-              --   schemas = {
-              --     kubernetes = "disabled",
-              --   },
-              --   schemaStore = {
-              --     enabled = false,
-              --   },
-              -- },
+              initTimeoutSeconds = 3,
+              path = vim.fn.stdpath("data") .. "/mason/bin/yaml-language-server",
+              config = {
+                schemas = {
+                  kubernetes = "templates/**",
+                },
+                completion = true,
+                hover = true,
+                schemaStore = {
+                  enable = true,
+                  url = "https://www.schemastore.org/api/json/catalog.json",
+                },
+              },
             },
           },
         },
