@@ -29,6 +29,7 @@ return {
       "hcl",
       "terraform",
       "hyprlang",
+      "helm",
     },
 
     vim.treesitter.language.register("yaml", "ansible"),

@@ -72,6 +72,31 @@ return
         },
       },
 
+      helm_ls = {
+        settings = {
+          ["helm-ls"] = {
+            valuesFiles = {
+              mainValuesFile = "values.yaml",
+              lintOverlayValuesFile = "values.lint.yaml",
+              additionalValuesFilesGlobPattern = "values*.{yaml,yml}",
+            },
+            yamlls = {
+              path = vim.fn.stdpath("data") .. "/mason/bin/yaml-language-server",
+              showDiagnosticsDirectly = false,
+              -- config = {
+              --   validate = false,
+              --   schemas = {
+              --     kubernetes = "disabled",
+              --   },
+              --   schemaStore = {
+              --     enabled = false,
+              --   },
+              -- },
+            },
+          },
+        },
+      },
+
       ansiblels = {
         filetypes = {
           "ansible",
@@ -126,5 +151,17 @@ return
 
       hyprls = {},
     },
+  },
+  setup = {
+    -- Taken from LazyVim guide to add Helm, also requires vim.helm plugin
+    yamlls = function()
+      LazyVim.lsp.on_attach(function(client, buffer)
+        if vim.bo[buffer].filetype == "helm" then
+          vim.schedule(function()
+            vim.cmd("LspStop ++force yamlls")
+          end)
+        end
+      end, "yamlls")
+    end,
   },
 }
