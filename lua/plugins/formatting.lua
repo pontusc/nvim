@@ -6,6 +6,7 @@ return {
       sh = { "beautysh" },
       json = { "prettier" },
       yaml = { "yamlfmt" },
+      ansible = { "yamlfmt" },
       markdown = { "prettier" },
       javascript = { "prettier" },
       typescript = { "prettier" },

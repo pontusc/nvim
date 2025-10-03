@@ -3,6 +3,7 @@
 -- Add any additional options here
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
+vim.opt.wrap = true
 
 -- Load custom filetype
 require("config.filetype")

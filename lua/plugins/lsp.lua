@@ -18,7 +18,13 @@ return
         },
       },
 
-      bashls = {},
+      bashls = {
+        on_attach = function(client, _)
+          -- Diagnostics are via shellsheck
+          client.server_capabilities.diagnosticProvider = false
+        end,
+      },
+
       jsonls = {},
       ts_ls = {},
       taplo = {},
@@ -117,6 +123,8 @@ return
       },
 
       terraformls = {},
+
+      hyprls = {},
     },
   },
 }
