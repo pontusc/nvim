@@ -3,7 +3,7 @@ return {
   opts = {
     formatters_by_ft = {
       python = { "black" },
-      sh = { "beautysh" },
+      sh = { "shfmt" },
       json = { "prettier" },
       yaml = { "yamlfmt" },
       ansible = { "yamlfmt" },
