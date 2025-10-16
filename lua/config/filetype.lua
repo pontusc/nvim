@@ -10,7 +10,7 @@ vim.filetype.add({
     -- Dockerfile detection
     [".*[Dd]ockerfile.*"] = "dockerfile",
 
-    -- Hpyrland
+    -- Hyprland
     [".*/hypr/.*%.conf"] = "hyprlang",
   },
 
