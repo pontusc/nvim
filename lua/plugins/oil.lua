@@ -17,6 +17,10 @@ return {
         ["<Esc><Esc>"] = { "actions.close", mode = "n" },
       },
 
+      float = {
+        border = "rounded",
+      },
+
       -- Open parent dir in current window
       -- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
 
