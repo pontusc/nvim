@@ -21,6 +21,22 @@ return {
         border = "rounded",
       },
 
+      confirmation = {
+        border = "rounded",
+      },
+
+      ssh = {
+        border = "rounded",
+      },
+
+      keymaps_help = {
+        border = "rounded",
+      },
+
+      progress = {
+        border = "rounded",
+      },
+
       -- Open parent dir in current window
       -- vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" }),
 
