@@ -46,8 +46,14 @@ return
               kubernetes = {
                 "*.{yml,yaml}",
               },
-              ["http://json.schemastore.org/github-workflow"] = ".github/workflows/*",
-              ["http://json.schemastore.org/github-action"] = ".github/action.{yml,yaml}",
+              ["http://json.schemastore.org/github-workflow"] = {
+                ".github/workflows/*",
+                "*workflow.{yml,yaml}",
+              },
+              ["http://json.schemastore.org/github-action"] = {
+                ".github/action.{yml,yaml}",
+                "*action.{yml,yaml}",
+              },
               ["https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json"] = "azure-pipelines*.{yml,yaml}",
               ["http://json.schemastore.org/prettierrc"] = ".prettierrc.{yml,yaml}",
               ["http://json.schemastore.org/kustomization"] = "kustomization.{yml,yaml}",
