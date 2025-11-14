@@ -12,5 +12,10 @@ return {
       typescript = { "prettier" },
       terraform = { "terraform_fmt" },
     },
+    formatters = {
+      shfmt = {
+        prepend_args = { "-sr" },
+      },
+    },
   },
 }
