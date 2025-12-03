@@ -23,6 +23,8 @@ return
       ts_ls = {},
       taplo = {},
 
+      rust_analyzer = {},
+
       yamlls = {
         filetypes = { "yaml" },
         settings = {
