@@ -18,6 +18,18 @@ return
         },
       },
 
+      dockerls = {
+        settings = {
+          docker = {
+            languageserver = {
+              formatter = {
+                ignoreMultilineInstructions = true,
+              },
+            },
+          },
+        },
+      },
+
       bashls = {},
       jsonls = {},
       ts_ls = {},

@@ -8,7 +8,7 @@ vim.filetype.add({
     [".*ansible.*%.ya?ml"] = "ansible",
 
     -- Dockerfile detection
-    [".*[Dd]ockerfile.*"] = "dockerfile",
+    ["[Dd]ockerfile.*"] = "dockerfile",
 
     -- Hyprland
     [".*/hypr/.*%.conf"] = "hyprlang",
