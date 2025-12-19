@@ -11,6 +11,7 @@ return {
       javascript = { "prettier" },
       typescript = { "prettier" },
       terraform = { "terraform_fmt" },
+      hcl = { "terraform_fmt" },
     },
     formatters = {
       shfmt = {
