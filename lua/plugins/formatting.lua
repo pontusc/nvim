@@ -12,10 +12,16 @@ return {
       typescript = { "prettier" },
       terraform = { "terraform_fmt" },
       hcl = { "terraform_fmt" },
+      make = { "mbake" },
     },
     formatters = {
       shfmt = {
         prepend_args = { "-sr" },
+      },
+      mbake = {
+        command = "mbake",
+        args = { "format", "--stdin" },
+        stdin = true,
       },
     },
   },

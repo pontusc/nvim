@@ -8,6 +8,7 @@ return {
       "yamlfmt",
       "black",
       "terraform",
+      "mbake",
 
       -- Linters
       "ruff", -- python
