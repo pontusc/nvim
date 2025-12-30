@@ -31,6 +31,7 @@ return {
       "hyprlang",
       "helm",
       "rust",
+      "make",
     },
 
     vim.treesitter.language.register("yaml", "ansible"),
