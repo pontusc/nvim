@@ -63,6 +63,7 @@ return
                 "*action.{yml,yaml}",
               },
               ["https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json"] = "azure-pipelines*.{yml,yaml}",
+              ["http://json.schemastore.org/cloudbuild"] = "cloudbuild*.{yml,yaml}",
               ["http://json.schemastore.org/prettierrc"] = ".prettierrc.{yml,yaml}",
               ["http://json.schemastore.org/kustomization"] = "kustomization.{yml,yaml}",
               ["http://json.schemastore.org/chart"] = "Chart.{yml,yaml}",
