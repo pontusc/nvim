@@ -6,17 +6,7 @@ return
   opts = {
     ---@type lspconfig.options
     servers = {
-      basedpyright = {
-        settings = {
-          basedpyright = {
-            disableOrganizedImports = false,
-            analysis = {
-              typeCheckingMode = "off",
-              ignore = { "*" },
-            },
-          },
-        },
-      },
+      ty = {},
 
       dockerls = {
         settings = {
