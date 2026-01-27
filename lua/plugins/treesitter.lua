@@ -32,6 +32,7 @@ return {
       "helm",
       "rust",
       "make",
+      "caddy",
     },
 
     vim.treesitter.language.register("yaml", "ansible"),

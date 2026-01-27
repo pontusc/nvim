@@ -14,5 +14,11 @@ vim.filetype.add({
     [".*/hypr/.*%.conf"] = "hyprlang",
   },
 
-  filename = {},
+  filename = {
+    ["Caddyfile"] = "caddy",
+  },
+
+  extension = {
+    caddy = "caddy",
+  },
 })
