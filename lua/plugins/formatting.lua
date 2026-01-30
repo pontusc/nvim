@@ -13,10 +13,16 @@ return {
       terraform = { "terraform_fmt" },
       hcl = { "terraform_fmt" },
       make = { "mbake" },
+      alloy = { "alloy_fmt" },
     },
     formatters = {
       shfmt = {
         prepend_args = { "-sr" },
+      },
+      alloy_fmt = {
+        command = "alloy",
+        args = { "fmt", "-" },
+        stdin = true,
       },
       mbake = {
         command = "mbake",

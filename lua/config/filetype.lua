@@ -7,6 +7,8 @@ vim.filetype.add({
     -- Common Ansible file patterns
     [".*ansible.*%.ya?ml"] = "ansible",
 
+    ["*.alloy"] = "alloy",
+
     -- Dockerfile detection
     ["[Dd]ockerfile.*"] = "dockerfile",
 
