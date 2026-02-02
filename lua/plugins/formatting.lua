@@ -14,7 +14,6 @@ return {
       hcl = { "terraform_fmt" },
       make = { "mbake" },
       alloy = { "alloy_fmt" },
-      nix = { "nixfmt" },
     },
     formatters = {
       shfmt = {

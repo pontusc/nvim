@@ -167,10 +167,6 @@ return
       terraformls = {},
 
       hyprls = {},
-
-      nil_ls = {
-        mason = false,
-      },
     },
   },
   setup = {
