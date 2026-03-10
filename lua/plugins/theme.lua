@@ -1,8 +1,1 @@
-return {
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "tokyonight",
-		},
-	},
-}
+/home/pontusc/.config/omarchy/current/theme/neovim.lua
