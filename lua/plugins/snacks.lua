@@ -9,6 +9,12 @@ return {
           -- Show "hidden" (dotfiles) in filesearch
           hidden = true,
         },
+        grep = {
+          -- Search hidden (dot) files/dirs like .github/
+          hidden = true,
+          -- Uncomment to also search gitignored files
+          -- ignored = true,
+        },
       },
     },
     scroll = {

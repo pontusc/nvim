@@ -20,7 +20,7 @@ return {
         prepend_args = { "-sr" },
       },
       alloy_fmt = {
-        command = "alloy",
+        command = "grafana-alloy",
         args = { "fmt", "-" },
         stdin = true,
       },
