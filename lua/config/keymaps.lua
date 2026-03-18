@@ -9,6 +9,10 @@ vim.keymap.del("n", "<C-Down>")
 vim.keymap.del("n", "<C-Left>")
 vim.keymap.del("n", "<C-Right>")
 
+-- Remove buffer navigation
+vim.keymap.del("n", "<S-h>")
+vim.keymap.del("n", "<S-l>")
+
 -- Window navigation
 vim.keymap.set("n", "<C-Up>", "<Cmd>TmuxNavigateUp<CR>", {})
 vim.keymap.set("n", "<C-Down>", "<Cmd>TmuxNavigateDown<CR>", {})
