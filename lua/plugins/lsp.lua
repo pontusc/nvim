@@ -43,9 +43,10 @@ return
             schemas = {
               kubernetes = {
                 "*.{yml,yaml}",
+                "!.github/**",
               },
               ["http://json.schemastore.org/github-workflow"] = {
-                ".github/workflows/*",
+                ".github/workflows/*.{yml,yaml}",
                 "*workflow.{yml,yaml}",
               },
               ["http://json.schemastore.org/github-action"] = {

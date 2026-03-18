@@ -9,6 +9,9 @@ return {
       "black",
       "terraform",
       "mbake",
+      "shfmt",
+      "stylua",
+      "taplo",
 
       -- Linters
       "ruff", -- python
