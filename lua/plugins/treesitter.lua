@@ -36,5 +36,6 @@ return {
     },
 
     vim.treesitter.language.register("yaml", "ansible"),
+    vim.treesitter.language.register("yaml", "ghaction"),
   },
 }

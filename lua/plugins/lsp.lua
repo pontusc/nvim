@@ -28,7 +28,7 @@ return
       rust_analyzer = {},
 
       yamlls = {
-        filetypes = { "yaml" },
+        filetypes = { "yaml", "ghaction" },
         settings = {
           yaml = {
             schemaStore = {

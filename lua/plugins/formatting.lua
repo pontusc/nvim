@@ -6,6 +6,7 @@ return {
       sh = { "shfmt" },
       json = { "prettier" },
       yaml = { "yamlfmt" },
+      ghaction = { "yamlfmt" },
       ansible = { "yamlfmt" },
       markdown = { "prettier" },
       javascript = { "prettier" },

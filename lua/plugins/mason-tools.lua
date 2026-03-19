@@ -19,6 +19,7 @@ return {
       "eslint_d", -- Typescript, JS
       "jsonlint",
       "yamllint",
+      "actionlint",
       "ansible-lint",
     },
   },

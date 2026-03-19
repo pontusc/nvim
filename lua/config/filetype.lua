@@ -15,6 +15,9 @@ vim.filetype.add({
     [".*/hypr/.*%.conf"] = "hyprlang",
 
     [".*Caddyfile.*"] = "caddy",
+
+    -- GitHub Actions workflows
+    [".*/%.github/workflows/.*%.ya?ml"] = "ghaction",
   },
 
   extension = {
