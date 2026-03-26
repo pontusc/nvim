@@ -33,6 +33,7 @@ return {
       "rust",
       "make",
       "caddy",
+      "go",
     },
 
     vim.treesitter.language.register("yaml", "ansible"),

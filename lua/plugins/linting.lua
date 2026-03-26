@@ -8,6 +8,7 @@ return {
       yaml = { "yamllint" },
       ghaction = { "yamllint", "actionlint" },
       ansible = { "ansible_lint" },
+      go = { "golangcilint" },
     },
   },
 }

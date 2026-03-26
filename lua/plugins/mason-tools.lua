@@ -21,6 +21,7 @@ return {
       "yamllint",
       "actionlint",
       "ansible-lint",
+      "golangci-lint",
     },
   },
 }

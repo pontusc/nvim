@@ -7,6 +7,7 @@ return
     ---@type lspconfig.options
     servers = {
       ty = {},
+      gopls = {},
 
       dockerls = {
         settings = {
