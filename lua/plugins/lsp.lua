@@ -21,6 +21,10 @@ return
         },
       },
 
+      docker_language_server = {
+        filetypes = { "dockerbake" },
+      },
+
       bashls = {},
       jsonls = {},
       ts_ls = {},

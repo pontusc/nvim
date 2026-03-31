@@ -14,6 +14,9 @@ vim.filetype.add({
     -- Hyprland
     [".*/hypr/.*%.conf"] = "hyprlang",
 
+    -- Docker Bake
+    ["docker%-bake.*%.hcl"] = "dockerbake",
+
     [".*Caddyfile.*"] = "caddy",
 
     -- GitHub Actions workflows

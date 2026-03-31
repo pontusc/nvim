@@ -38,5 +38,6 @@ return {
 
     vim.treesitter.language.register("yaml", "ansible"),
     vim.treesitter.language.register("yaml", "ghaction"),
+    vim.treesitter.language.register("hcl", "dockerbake"),
   },
 }

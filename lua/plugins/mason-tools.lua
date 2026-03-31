@@ -8,6 +8,7 @@ return {
       "yamlfmt",
       "black",
       "terraform",
+      "docker-language-server",
       "mbake",
       "shfmt",
       "stylua",

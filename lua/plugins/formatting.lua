@@ -13,6 +13,7 @@ return {
       typescript = { "prettier" },
       terraform = { "terraform_fmt" },
       hcl = { "terraform_fmt" },
+      dockerbake = { "terraform_fmt" },
       make = { "mbake" },
       alloy = { "alloy_fmt" },
       go = { "gofmt" },
