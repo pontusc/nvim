@@ -220,10 +220,9 @@ function M.add(branch)
   end
 
   local repo = vim.fn.fnamemodify(toplevel, ":t")
+  local parent = vim.fn.fnamemodify(toplevel, ":h")
   local safe = branch:gsub("/", "-")
-  local root = vim.fn.expand("~/.worktrees")
-  vim.fn.mkdir(root, "p")
-  local path = root .. "/" .. repo .. "-" .. safe
+  local path = parent .. "/" .. repo .. "-" .. safe
 
   if vim.fn.isdirectory(path) == 1 then
     notify(path .. " already exists; cd'ing into it", vim.log.levels.WARN)
