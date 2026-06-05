@@ -8,10 +8,6 @@ vim.keymap.del("n", "<C-j>")
 vim.keymap.del("n", "<C-k>")
 vim.keymap.del("n", "<C-l>")
 
--- Remove buffer navigation
-vim.keymap.del("n", "<S-h>")
-vim.keymap.del("n", "<S-l>")
-
 -- Window navigation (vim-tmux-navigator via Alt+hjkl)
 vim.keymap.set("n", "<M-h>", "<Cmd>TmuxNavigateLeft<CR>", {})
 vim.keymap.set("n", "<M-j>", "<Cmd>TmuxNavigateDown<CR>", {})
