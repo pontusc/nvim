@@ -4,6 +4,8 @@
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 10
 vim.opt.wrap = true
+-- Never show the native tabline (tab pages are shown in the lualine statusline)
+vim.opt.showtabline = 0
 
 -- Load custom filetype
 require("config.filetype")

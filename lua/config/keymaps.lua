@@ -14,6 +14,10 @@ vim.keymap.set("n", "<M-j>", "<Cmd>TmuxNavigateDown<CR>", {})
 vim.keymap.set("n", "<M-k>", "<Cmd>TmuxNavigateUp<CR>", {})
 vim.keymap.set("n", "<M-l>", "<Cmd>TmuxNavigateRight<CR>", {})
 
+-- Tab navigation (Shift+h/l move between tab pages, overrides LazyVim buffer cycle)
+vim.keymap.set("n", "<S-h>", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
+vim.keymap.set("n", "<S-l>", "<cmd>tabnext<cr>", { desc = "Next Tab" })
+
 -- Disable arrow keys (force hjkl)
 local noop = { "n", "i", "v" }
 for _, mode in ipairs(noop) do
