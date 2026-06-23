@@ -20,5 +20,11 @@ return {
     scroll = {
       enabled = false, -- Disable scrolling animations
     },
+    -- Inline image rendering via the Kitty graphics protocol (kitty/ghostty host,
+    -- through tmux with allow-passthrough). Renders images in markdown buffers —
+    -- including guh.nvim PR bodies/comments. Needs ImageMagick (`magick`).
+    image = {
+      enabled = true,
+    },
   },
 }

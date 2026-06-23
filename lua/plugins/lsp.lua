@@ -170,7 +170,12 @@ return
         },
       },
 
-      terraformls = {},
+      terraformls = {
+        -- terraform-ls logs verbosely to stderr by default (no log-level flag
+        -- exists upstream), which nvim records as ERROR lines in lsp.log.
+        -- Redirect its logs to a file to keep lsp.log clean. See terraform-ls#1271.
+        cmd = { "terraform-ls", "serve", "-log-file", "/tmp/terraform-ls-{{pid}}.log" },
+      },
 
       hyprls = {},
     },
