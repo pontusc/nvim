@@ -1,8 +1,8 @@
--- Local development spec for revue.nvim: point lazy at the working checkout
--- (no clone/update — edits in the repo are picked up on next Neovim start).
+-- For local development, swap
+-- the url line back to: dir = "/home/pontusc/Work/revue"
 return {
   {
-    dir = "/home/pontusc/Work/revue",
+    url = "git@github.com:pontusc-alchemy/revue.git",
     name = "revue.nvim",
     dependencies = { "nvim-mini/mini.diff" },
     -- The plugin arranges its own laziness: plugin/revue.lua only registers
