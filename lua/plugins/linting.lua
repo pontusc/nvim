@@ -9,6 +9,7 @@ return {
       ghaction = { "yamllint", "actionlint" },
       ansible = { "ansible_lint" },
       go = { "golangcilint" },
+      dockerfile = { "hadolint" },
     },
   },
 }
