@@ -4,6 +4,7 @@ return {
   {
     url = "git@github.com:pontusc-alchemy/revue.git",
     name = "revue.nvim",
+    tag = "v0.1.0",
     dependencies = { "nvim-mini/mini.diff" },
     -- The plugin arranges its own laziness: plugin/revue.lua only registers
     -- :Revue and the <Plug> maps (deferred requires), so eager load is cheap
