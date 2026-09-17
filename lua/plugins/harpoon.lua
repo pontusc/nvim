@@ -15,7 +15,7 @@ return {
       harpoon:list():add()
     end, { desc = "Add file to harpoon list" })
 
-    map("<leader>rf", function()
+    map("<leader>ad", function()
       harpoon:list():remove()
     end, { desc = "Remove current file from harpoon list" })
 

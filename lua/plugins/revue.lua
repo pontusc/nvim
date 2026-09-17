@@ -4,19 +4,14 @@ return {
   {
     url = "git@github.com:pontusc-alchemy/revue.git",
     name = "revue.nvim",
-    tag = "v0.1.0",
-    dependencies = { "nvim-mini/mini.diff" },
+    tag = "v0.2.1",
     -- The plugin arranges its own laziness: plugin/revue.lua only registers
     -- :Revue and the <Plug> maps (deferred requires), so eager load is cheap
-    -- and no cmd/keys lazy-load triggers are needed.
+    -- and no cmd/keys lazy-load triggers are needed. Keymaps come from
+    -- config.keymaps and are bound by the plugin itself.
     lazy = false,
-    -- Global session binds. In-review actions (annotate/edit/export/list/...)
-    -- are buffer-local <leader>r* binds set by the plugin inside review buffers.
-    keys = {
-      { "<leader>rv", "<cmd>Revue start<cr>", desc = "Revue: start review" },
-      { "<leader>rq", "<cmd>Revue quit<cr>", desc = "Revue: quit review" },
-      { "<leader>rp", "<cmd>Revue preview<cr>", desc = "Revue: preview export" },
+    opts = {
+      export = { clear_after_export = true },
     },
-    opts = {},
   },
 }
