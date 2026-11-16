@@ -6,7 +6,11 @@ return
   opts = {
     ---@type lspconfig.options
     servers = {
-      ty = {},
+      ty = {
+        init_options = {
+          experimental = { useUv = "scripts" },
+        },
+      },
       gopls = {},
 
       dockerls = {
